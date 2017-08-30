@@ -1,0 +1,12 @@
+angular.module('header',[])
+  .directive('nglHeader',[function(){
+    return{
+      scope:{},
+      restrict:'E',
+      templateUrl:'/bxg/components/common/header/header.html',
+      replace:true,
+      controller:['$scope',function($scope){
+        console.log('头部')
+      }]
+    }
+  }])
